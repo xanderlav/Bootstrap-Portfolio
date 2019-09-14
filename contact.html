@@ -1,55 +1,57 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Contact info</title>
-        <!-- Refers to bootstrap css file -->
+        <!-- Refers to bootstrap css/google fonts/magic gradient files -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Dancing+Script|Great+Vibes|Tangerine&display=swap">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
-
     </head>
     <body class="bodyContact">
-        <h1>Contact</h1>
-        <hr>
-        <div class="card" style="width: 18rem;">
-            <div class="card-header">
-                  Name
-            </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Alejandro Regino Lopez Avila</li>
-                </ul>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-ligth" style="background-color: #e3f2fd;">
+                <!-- <a class="navbar-brand" href="#">Alex Lopez Avila</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button> -->      
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                      Email
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Alejandro Regino L&oacutepez &Aacutevila</h1>
                 </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">alejandro.lopezav@gmail.com</li>
-                    </ul>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                      Mesage
-                </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><textarea>Your message here</textarea></li>
-                    </ul>
-            </div>   
+        </div>
+        <div>
             <hr>
             <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
+            <div class="form-group">
+                <label for="exampleInputName1">Your Name</label>
+                <input type="text" class="form-control" id="yourNameContact" aria-describedby="nameContact" placeholder="Enter name">
+            </div>                
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputMessage1">Your Message</label>
+                <input type="text" class="form-control" id="exampleInputMessage1" placeholder="Enter Message">
+            </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
-              </form>     
+            </form>
+        </div>     
     </body>
 </html>
